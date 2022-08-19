@@ -1,4 +1,5 @@
 {
+  "homepage": "c0bqlt.github.io/stand-up-reminder",
   "name": "stand-up-reminder",
   "version": "0.1.0",
   "private": true,
@@ -6,10 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "flowbite": "^1.5.1",
+    "gh-pages": "^4.0.0",
     "howler": "^2.2.3",
     "next": "12.2.3",
     "next-seo": "^5.5.0",
